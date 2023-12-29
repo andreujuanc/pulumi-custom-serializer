@@ -18,6 +18,6 @@ package.json: (no npm package yet)
 
 Import it:
 ```ts
-import applySerializer from ""pulumi-custom-serializer": "https://github.com/andreujuanc/pulumi-custom-serializer",";
+import applySerializer from "pulumi-custom-serializer"
 applySerializer();
 ```
