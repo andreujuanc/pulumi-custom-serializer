@@ -17,12 +17,17 @@
     "build": "tsc",
     "test": "npm run build && node dist/example/index.js"
   },
+  "peerDependencies": {
+    "bun": "^1.0.20",
+    "func-loc": "^0.1.16",
+    "@pulumi/pulumi": "*"
+  },
   "devDependencies": {
     "siwe": "1.1.6",
     "ts-loader": "^9.4.2",
     "bun": "^1.0.20",
     "func-loc": "^0.1.16",
-    "@pulumi/pulumi": "^3.60.0",
+    "@pulumi/pulumi": "*",
     "ts-node": "^7.0.1",
     "typescript": "^4"
   },
