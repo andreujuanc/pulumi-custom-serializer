@@ -15,19 +15,20 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && node dist/example/index.js"
+    "test": "npm run build && node dist/example/index.js",
+    "bundle": "node_modules/bun/bin/bun src/bundle.ts"
   },
   "peerDependencies": {
+    "@pulumi/pulumi": "*",
     "bun": "^1.0.20",
-    "func-loc": "^0.1.16",
-    "@pulumi/pulumi": "*"
+    "func-loc": "^0.1.16"
   },
   "devDependencies": {
+    "@pulumi/pulumi": "*",
+    "bun": "^1.0.29",
+    "func-loc": "^0.1.16",
     "siwe": "1.1.6",
     "ts-loader": "^9.4.2",
-    "bun": "^1.0.20",
-    "func-loc": "^0.1.16",
-    "@pulumi/pulumi": "*",
     "ts-node": "^7.0.1",
     "typescript": "^4"
   },
@@ -37,5 +38,8 @@
         "siwe"
       ]
     }
+  },
+  "dependencies": {
+    "@types/bun": "^1.0.8"
   }
 }

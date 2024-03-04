@@ -1,6 +1,6 @@
 
 import * as pulumi from "@pulumi/pulumi";
-import * as example from './handler'
+import * as example from '../api/handler'
 import fs from 'fs'
 
 import applySerializer from "..";
